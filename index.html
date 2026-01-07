@@ -3,38 +3,108 @@
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="content-language" content="en">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="keywords" content="Virtual Laboratory, Chemical Engineering, virtual-lab.github.io, github, open source, Engineering, Education, Simulation, Virtual Laboratory Experiment">
-  <meta name="author" content="Virtual Laboratory, Prakarsh Paliwal">
-  <meta name="application-name" content="virtual-lab.github.io">
-  <meta name="description" content="Open-source, web-based simulations and virtual laboratory experiments for Chemical Engineering education">
+  <title>Chemical Engineering Virtual Lab</title>
 
-  <link href="./home_page/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="./home_page/style.css">
 
-  <title>virtual-labs</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
+  <!-- Simulation Data -->
   <script src="./home_page/simulation_list.js"></script>
 </head>
 
 <body>
-  <header>
-    <h1>virtual-labs</h1>
-    <p>
-      virtual-labs is a collection of web-based scientific simulations and
-      virtual laboratory experiments designed for Chemical Engineering and related disciplines.
-    </p>
-  </header>
 
-  <main>
-    <div class="grid-container" id="simulations-grid">
-      <!-- Simulation cards will be dynamically inserted here -->
+  <!-- ================= NAVIGATION ================= -->
+  <nav class="navbar">
+    <div class="nav-logo">ChemEngg Virtual Lab</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Virtual Labs</a></li>
+      <li><a href="#">Simulations</a></li>
+      <li><a href="#">Theory & Concepts</a></li>
+      <li><a href="#">Assignments & Quiz</a></li>
+      <li><a href="#">AI Assistant</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Chemical Engineering Virtual Lab</h1>
+      <p>
+        Interactive learning platform for<br>
+        <strong>MANIT Bhopal – B.Tech Chemical Engineering</strong>
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#labs" class="btn primary">Start Virtual Lab</a>
+        <a href="#simulations" class="btn secondary">Explore Simulations</a>
+        <a href="#" class="btn outline">AI Assistant</a>
+      </div>
     </div>
-  </main>
+  </section>
 
+  <!-- ================= SYLLABUS COVERAGE ================= -->
+  <section class="syllabus">
+    <h2>Syllabus Coverage</h2>
+    <div class="syllabus-grid">
+      <div class="syllabus-card">Thermodynamics</div>
+      <div class="syllabus-card">Fluid Mechanics</div>
+      <div class="syllabus-card">Heat Transfer</div>
+      <div class="syllabus-card">Mass Transfer</div>
+      <div class="syllabus-card">Reaction Engineering</div>
+      <div class="syllabus-card">Process Control</div>
+      <div class="syllabus-card">Separations</div>
+      <div class="syllabus-card">Process Calculations</div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED LABS / SIMULATIONS ================= -->
+  <section class="featured" id="simulations">
+    <h2>Virtual Labs & Simulations</h2>
+    <p class="section-subtitle">
+      Browser-based interactive experiments inspired by LearnChemE virtual labs
+    </p>
+
+    <!-- ⚠️ DO NOT CHANGE THIS ID -->
+    <div class="grid-container" id="simulations-grid">
+      <!-- Cards injected by main.js -->
+    </div>
+  </section>
+
+  <!-- ================= QUICK START ================= -->
+  <section class="quick-start">
+    <h2>Quick Start Guide</h2>
+    <ul>
+      <li>Use latest Chrome / Firefox for best experience</li>
+      <li>Start with Thermodynamics → Fluid Mechanics → Heat Transfer</li>
+      <li>Adjust parameters and observe real-time trends</li>
+    </ul>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>© Chemical Engineering Virtual Lab</p>
+    <p>
+      Concept adapted from LearnChemE virtual labs<br>
+      Developed for academic learning & research
+    </p>
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Team & Guide</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <!-- Rendering Logic -->
   <script src="./home_page/main.js"></script>
-</body>
 
+</body>
 </html>
